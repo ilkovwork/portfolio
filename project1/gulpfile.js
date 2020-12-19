@@ -47,7 +47,7 @@ function startwatch() {
 function styles() {
     return src('app/' + 'scss' + '/style.' + 'scss' + '') 
     .pipe(sass()) 
-    .pipe(concat('123.min.css')) 
+    .pipe(concat('style.min.css')) 
     .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true })) 
     .pipe(cleancss( { level: { 1: { specialComments: 0 } }/* , format: 'beautify' */ } )) 
     .pipe(dest('app/css/')) 
