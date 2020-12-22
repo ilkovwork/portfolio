@@ -1,10 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+
 .slider {
-    position: relative;
 
+    &__item {
+        position: relative;
 
-    &__item{
-        img{    height: 100vh;
-            width: 100%; 
+        color: red;
+        &-title {
+            position: absolute;
+            top: calc(50vh - 36px);
+            font-size: 36px;
+            width: 100%;
+            h1{
+                text-align: center;
+            }
+        }
+
+        &-subtitle {
+            position: relative;
+            bottom:100vh;
+        }
+
+        &-description {
+            position: relative;
+            bottom:100vh;
+        }
+
+        &-btn {
+            position: relative;
+            bottom:100vh;
+        }
+
+        img {
+            height: 100vh;
+            width: 100%;
             object-fit: cover;
         }
 
@@ -55,9 +85,9 @@
                 width: 13px;
                 height: 13px;
                 border-radius: 50%;
-                background-color: rgba(202, 192, 192, 0.5);
+                background-color: rgba(202, 192, 192, 0.3);
                 margin: 0 5px;
-                
+
             }
         }
 

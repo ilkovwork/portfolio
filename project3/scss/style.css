@@ -1,54 +1,72 @@
-.slider {
-  position: relative; }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600&display=swap");
+.slider__item {
+  position: relative;
+  color: red; }
+  .slider__item-title {
+    position: absolute;
+    top: calc(50vh - 36px);
+    font-size: 36px;
+    width: 100%; }
+    .slider__item-title h1 {
+      text-align: center; }
+  .slider__item-subtitle {
+    position: relative;
+    bottom: 100vh; }
+  .slider__item-description {
+    position: relative;
+    bottom: 100vh; }
+  .slider__item-btn {
+    position: relative;
+    bottom: 100vh; }
   .slider__item img {
     height: 100vh;
     width: 100%;
     object-fit: cover; }
-  .slider button {
-    outline: none;
-    border: none; }
-  .slider .slick-arrow {
-    position: absolute;
-    top: 45%;
-    z-index: 10;
-    width: 35px;
-    height: 35px;
-    font-size: 0; }
-  .slider .slick-prev {
-    left: 50px;
-    background: url(../images/dest/arrow_left.png) 0 0/100% no-repeat; }
-  .slider .slick-next {
-    background: url(../images/dest/arrow_right.png) 0 0/100% no-repeat;
-    right: 50px; }
-  .slider .slick-disabled {
-    opacity: 0.4; }
-  .slider .slick-dots {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 0px;
-    left: 46%; }
-    .slider .slick-dots li {
-      list-style: none; }
-      .slider .slick-dots li button {
-        font-size: 0;
-        width: 13px;
-        height: 13px;
-        border-radius: 50%;
-        background-color: rgba(202, 192, 192, 0.5);
-        margin: 0 5px; }
-    .slider .slick-dots .slick-active button {
-      background-color: rgba(166, 172, 175, 0.1);
-      width: 18px;
-      height: 18px;
-      border: solid 1px #ffffff; }
-  .slider .slick-slide {
-    outline: none;
-    border: none; }
-  .slider .slick-list {
-    overflow: hidden; }
-  .slider .slick-track {
-    display: flex; }
+.slider button {
+  outline: none;
+  border: none; }
+.slider .slick-arrow {
+  position: absolute;
+  top: 45%;
+  z-index: 10;
+  width: 35px;
+  height: 35px;
+  font-size: 0; }
+.slider .slick-prev {
+  left: 50px;
+  background: url(../images/dest/arrow_left.png) 0 0/100% no-repeat; }
+.slider .slick-next {
+  background: url(../images/dest/arrow_right.png) 0 0/100% no-repeat;
+  right: 50px; }
+.slider .slick-disabled {
+  opacity: 0.4; }
+.slider .slick-dots {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  left: 46%; }
+  .slider .slick-dots li {
+    list-style: none; }
+    .slider .slick-dots li button {
+      font-size: 0;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background-color: rgba(202, 192, 192, 0.3);
+      margin: 0 5px; }
+  .slider .slick-dots .slick-active button {
+    background-color: rgba(166, 172, 175, 0.1);
+    width: 18px;
+    height: 18px;
+    border: solid 1px #ffffff; }
+.slider .slick-slide {
+  outline: none;
+  border: none; }
+.slider .slick-list {
+  overflow: hidden; }
+.slider .slick-track {
+  display: flex; }
 
 /*# sourceMappingURL=style.css.map */
