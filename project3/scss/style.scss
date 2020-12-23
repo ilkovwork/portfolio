@@ -1,116 +1,205 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('../css/reset.css');
 
 
-.slider {
 
-    &__item {
-        position: relative;
+header {
+    position: relative;
 
-        color: red;
-        &-title {
-            position: absolute;
-            top: calc(50vh - 36px);
-            font-size: 36px;
-            width: 100%;
-            h1{
+    .container-contact{
+        max-width: 1300px;
+    .wrapper{
+        padding: 0 50px;
+    }
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        z-index: 3;
+        .navbar-brand{
+            color: #ffffff;
+            font-size: 34px;
+            font-family: Raleway;
+            font-weight: 400;
+            img{
+                margin-right: 10px;
+            }
+            
+        }
+        .collapse{
+            justify-content: flex-end;
+    
+            .navbar-nav{
+                .active{
+                    a{color:#c7b299;}
+                    
+            }
+                font-size: 14px;
+                font-family: Montserrat;
+                a{
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+    .slider {
+
+        &__item {
+            position: relative;
+
+            color: #ffffff;
+
+
+            .box {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &-title {
+                width: 100%;
+                margin-bottom: 15px;
+
+                h1 {
+                    font-size: 52px;
+                    text-align: center;
+                    font-family: Raleway;
+                    font-weight: 600;
+
+                }
+            }
+
+            &-subtitle {
+                width: 100%;
+                margin-bottom: 10px;
+
+                h2 {
+                    font-size: 36px;
+                    text-align: center;
+                    font-family: Raleway;
+                    font-weight: 400;
+                }
+            }
+
+            &-description {
+                width: 600px;
+                margin: 10px auto 50px;
+
+                p {
+                    font-size: 16px;
+                    font-family: Montserrat;
+                    text-align: center;
+                    line-height: 25px;
+
+                }
+
+            }
+
+
+            &-btn {
                 text-align: center;
+                width: 180px;
+                margin: 0 auto;
+
+                a {
+                    color: #ffffff;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    background-color: #998675;
+                    font-size: 14px;
+                    font-family: Raleway;
+                    padding: 17px 0;
+                    display: block;
+                    text-decoration: none;
+                    border-radius: 4px;
+                }
+            }
+
+            img {
+                height: 100vh;
+                width: 100%;
+                object-fit: cover;
+            }
+
+        }
+
+        button {
+            outline: none;
+            border: none;
+        }
+
+        .slick-arrow {
+            position: absolute;
+            top: calc(50vh - 34px);
+            z-index: 10;
+            width: 35px;
+            height: 68px;
+            font-size: 0;
+        }
+
+        .slick-prev {
+            left: 50px;
+            background: url(../images/arrow_left.png) 0 0 /100% no-repeat;
+        }
+
+        .slick-next {
+            background: url(../images/arrow_right.png) 0 0 /100% no-repeat;
+            right: 50px;
+        }
+
+        .slick-disabled {
+            opacity: 0.4;
+        }
+
+        .slick-dots {
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            bottom: 30px;
+            right: 0;
+
+            li {
+
+                list-style: none;
+
+                button {
+                    font-size: 0;
+                    width: 13px;
+                    height: 13px;
+                    border-radius: 50%;
+                    background-color: rgba(202, 192, 192, 0.3);
+                    margin: 0 5px;
+
+                }
+            }
+
+            .slick-active {
+                button {
+                    background-color: rgba(166, 172, 175, 0.1);
+                    width: 18px;
+                    height: 18px;
+                    border: solid 1px #ffffff;
+                }
             }
         }
 
-        &-subtitle {
-            position: relative;
-            bottom:100vh;
+        .slick-slide {
+            outline: none;
+            border: none;
         }
 
-        &-description {
-            position: relative;
-            bottom:100vh;
+        .slick-list {
+            overflow: hidden;
         }
 
-        &-btn {
-            position: relative;
-            bottom:100vh;
+        .slick-track {
+            display: flex;
         }
-
-        img {
-            height: 100vh;
-            width: 100%;
-            object-fit: cover;
-        }
-
-    }
-
-    button {
-        outline: none;
-        border: none;
-    }
-
-    .slick-arrow {
-        position: absolute;
-        top: 45%;
-        z-index: 10;
-        width: 35px;
-        height: 35px;
-        font-size: 0;
-    }
-
-    .slick-prev {
-        left: 50px;
-        background: url(../images/dest/arrow_left.png) 0 0 /100% no-repeat;
-    }
-
-    .slick-next {
-        background: url(../images/dest/arrow_right.png) 0 0 /100% no-repeat;
-        right: 50px;
-    }
-
-    .slick-disabled {
-        opacity: 0.4;
-    }
-
-    .slick-dots {
-        display: flex;
-        align-self: center;
-        justify-content: center;
-        position: absolute;
-        bottom: 0px;
-        left: 46%;
-
-        li {
-
-            list-style: none;
-
-            button {
-                font-size: 0;
-                width: 13px;
-                height: 13px;
-                border-radius: 50%;
-                background-color: rgba(202, 192, 192, 0.3);
-                margin: 0 5px;
-
-            }
-        }
-
-        .slick-active {
-            button {
-                background-color: rgba(166, 172, 175, 0.1);
-                width: 18px;
-                height: 18px;
-                border: solid 1px #ffffff;
-            }
-        }
-    }
-
-    .slick-slide {
-        outline: none;
-        border: none;
-    }
-
-    .slick-list {
-        overflow: hidden;
-    }
-
-    .slick-track {
-        display: flex;
     }
 }
