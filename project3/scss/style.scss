@@ -3,6 +3,7 @@
 
 
 
+// main style
 
 .container-content{
     max-width: 1300px;
@@ -24,7 +25,64 @@
     background: linear-gradient(90deg, #211b19 0%, #382820 50%, #493125 100%);
 }
 
-header {
+
+// @mixin button
+
+@mixin btn{
+    
+    a {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 600;
+        background-color: #998675;
+        font-size: 14px;
+        font-family: Raleway;
+        padding: 17px 0;
+        display: block;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: .3s;
+        box-shadow: 0 3px 0 #6b5541;
+        text-align: center;
+        width: 180px;  
+    }
+
+    a:hover{
+        background-color: #998675a4;
+        text-decoration: none;
+    }
+}
+
+// @mixin title
+@mixin title{
+    font-family: Raleway;
+    font-size:30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    color: #555555;
+    text-align: center;
+}
+
+// @mixin subtitle
+@mixin subtitle{
+    font-family: Montserrat;
+    font-size:16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    color: #8c8c8c;
+    margin-bottom: 35px;
+    text-align: center;
+        p{
+            width: 700px;
+            margin: 0 auto;
+        }
+
+}
+
+
+
+
+.header {
     position: relative;
 
     .navbar {
@@ -185,26 +243,13 @@ header {
                 }
 
             }
-
-
-            &-btn {
-                text-align: center;
-                width: 180px;
+            &-btn{  
                 margin: 0 auto;
-
-                a {
-                    color: #ffffff;
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    background-color: #998675;
-                    font-size: 14px;
-                    font-family: Raleway;
-                    padding: 17px 0;
-                    display: block;
-                    text-decoration: none;
-                    border-radius: 4px;
-                }
+                @include btn;
             }
+
+
+
 
             img {
                 height: 100vh;
@@ -366,23 +411,10 @@ header {
     padding-top: 85px;
     
     &__title{
-        font-family: Raleway;
-        font-size:30px;
-        line-height: 30px;
-        margin-bottom: 30px;
-        color: #555555;
+        @include title;
     }
     &__subtitle{
-        font-family: Montserrat;
-        font-size:16px;
-        line-height: 24px;
-        margin-bottom: 15px;
-        color: #8c8c8c;
-        margin-bottom: 35px;
-            p{
-                width: 700px;
-                margin: 0 auto;
-            }
+        @include subtitle;
 
     }
     
@@ -470,22 +502,38 @@ header {
         }
     }
     .btn-now{
-        align-self: center;
-        text-align: end;
-        a{
-            font-family: Raleway;
-            color:white;
-            font-weight: 600;
-            text-transform: uppercase;
-            padding: 18px 28px;
-            background-color: #998675;
-            border-radius: 4px;
-            box-shadow: 0 3px 0 #6b5541;
-            transition: .3s;
-        }
-        a:hover{
-            background-color: #b99174;
-            text-decoration: none;
+        @include btn;
+    }
+}
+
+.project{
+    padding: 80px 0;
+    &__title{
+        @include title;
+    }
+    &__subtitle{
+        @include subtitle;
+    }
+    .tabs{
+        ul{
+            display: flex;
+            justify-content: center;
+            li{
+                padding: 10px 20px;
+                color: #000000;
+                font-family: Montserrat;
+                border: 1px solid #ebebeb;
+                border-radius: 5px;
+                margin-right: 10px;
+                
+            }
+            .active{
+                background-color: #998675;
+                color: #ffffff;
+            }
+            &:last-child{
+                margin: 0;
+            }
         }
     }
 }

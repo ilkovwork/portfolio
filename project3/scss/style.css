@@ -16,9 +16,9 @@
 .gradient-color {
   background: linear-gradient(90deg, #211b19 0%, #382820 50%, #493125 100%); }
 
-header {
+.header {
   position: relative; }
-  header .navbar {
+  .header .navbar {
     position: relative;
     top: 10px;
     z-index: 3;
@@ -27,95 +27,93 @@ header {
     height: 0;
     padding: 0;
     margin: 0; }
-    header .navbar a {
+    .header .navbar a {
       color: #ffffff;
       text-decoration: none;
       font-size: 14px;
       font-family: Montserrat; }
-    header .navbar__logo {
+    .header .navbar__logo {
       color: #ffffff;
       font-family: Raleway;
       font-weight: 400; }
-      header .navbar__logo a {
+      .header .navbar__logo a {
         font-size: 34px; }
-      header .navbar__logo img {
+      .header .navbar__logo img {
         margin-right: 10px; }
-    header .navbar__nav {
+    .header .navbar__nav {
       align-self: center; }
-      header .navbar__nav ul {
+      .header .navbar__nav ul {
         display: flex; }
-        header .navbar__nav ul li {
+        .header .navbar__nav ul li {
           width: 100%;
           height: 100%;
           display: block; }
-          header .navbar__nav ul li:nth-child(10), header .navbar__nav ul li:nth-child(9) {
+          .header .navbar__nav ul li:nth-child(10), .header .navbar__nav ul li:nth-child(9) {
             width: 50px; }
-          header .navbar__nav ul li a {
+          .header .navbar__nav ul li a {
             text-align: center;
             display: block;
             position: relative;
             padding: 10px;
             transition: .5s ease; }
-            header .navbar__nav ul li a:before, header .navbar__nav ul li a:after {
+            .header .navbar__nav ul li a:before, .header .navbar__nav ul li a:after {
               content: '';
               position: absolute;
               transition: transform .3s ease; }
-            header .navbar__nav ul li a:before, header .navbar__nav ul li a:after {
+            .header .navbar__nav ul li a:before, .header .navbar__nav ul li a:after {
               left: 0;
               top: 0;
               width: 100%;
               height: 100%;
               border-style: solid;
               border-color: #86868538; }
-            header .navbar__nav ul li a:before {
+            .header .navbar__nav ul li a:before {
               border-width: 2px 0 2px 0;
               transform: scaleX(0); }
-            header .navbar__nav ul li a:after {
+            .header .navbar__nav ul li a:after {
               border-width: 0 2px 0 2px;
               transform: scaleY(0); }
-            header .navbar__nav ul li a:hover:before, header .navbar__nav ul li a:hover:after {
+            .header .navbar__nav ul li a:hover:before, .header .navbar__nav ul li a:hover:after {
               transform: scale(1, 1); }
-          header .navbar__nav ul li a:hover {
+          .header .navbar__nav ul li a:hover {
             color: #c7b299; }
-      header .navbar__nav .active a {
+      .header .navbar__nav .active a {
         color: #c7b299; }
-  header .slider__item {
+  .header .slider__item {
     position: relative;
     color: #ffffff; }
-    header .slider__item .box {
+    .header .slider__item .box {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
-    header .slider__item-title {
+    .header .slider__item-title {
       width: 100%;
       margin-bottom: 15px; }
-      header .slider__item-title h1 {
+      .header .slider__item-title h1 {
         font-size: 52px;
         text-align: center;
         font-family: Raleway;
         font-weight: 600; }
-    header .slider__item-subtitle {
+    .header .slider__item-subtitle {
       width: 100%;
       margin-bottom: 10px; }
-      header .slider__item-subtitle h2 {
+      .header .slider__item-subtitle h2 {
         font-size: 36px;
         text-align: center;
         font-family: Raleway;
         font-weight: 400; }
-    header .slider__item-description {
+    .header .slider__item-description {
       width: 600px;
       margin: 10px auto 50px; }
-      header .slider__item-description p {
+      .header .slider__item-description p {
         font-size: 16px;
         font-family: Montserrat;
         text-align: center;
         line-height: 25px; }
-    header .slider__item-btn {
-      text-align: center;
-      width: 180px;
+    .header .slider__item-btn {
       margin: 0 auto; }
-      header .slider__item-btn a {
+      .header .slider__item-btn a {
         color: #ffffff;
         text-transform: uppercase;
         font-weight: 600;
@@ -125,31 +123,38 @@ header {
         padding: 17px 0;
         display: block;
         text-decoration: none;
-        border-radius: 4px; }
-    header .slider__item img {
+        border-radius: 4px;
+        transition: .3s;
+        box-shadow: 0 3px 0 #6b5541;
+        text-align: center;
+        width: 180px; }
+      .header .slider__item-btn a:hover {
+        background-color: #998675a4;
+        text-decoration: none; }
+    .header .slider__item img {
       height: 100vh;
       width: 100%;
       object-fit: cover;
       min-height: 600px; }
-  header .slider button {
+  .header .slider button {
     outline: none;
     border: none; }
-  header .slider .slick-arrow {
+  .header .slider .slick-arrow {
     position: absolute;
     top: calc(50vh - 34px);
     z-index: 10;
     width: 35px;
     height: 68px;
     font-size: 0; }
-  header .slider .slick-prev {
+  .header .slider .slick-prev {
     left: 50px;
     background: url(../images/arrow_left.png) 0 0/100% no-repeat; }
-  header .slider .slick-next {
+  .header .slider .slick-next {
     background: url(../images/arrow_right.png) 0 0/100% no-repeat;
     right: 50px; }
-  header .slider .slick-disabled {
+  .header .slider .slick-disabled {
     opacity: 0.4; }
-  header .slider .slick-dots {
+  .header .slider .slick-dots {
     display: flex;
     align-self: center;
     justify-content: center;
@@ -157,26 +162,26 @@ header {
     left: 0;
     bottom: 30px;
     right: 0; }
-    header .slider .slick-dots li {
+    .header .slider .slick-dots li {
       list-style: none; }
-      header .slider .slick-dots li button {
+      .header .slider .slick-dots li button {
         font-size: 0;
         width: 13px;
         height: 13px;
         border-radius: 50%;
         background-color: rgba(202, 192, 192, 0.3);
         margin: 0 5px; }
-    header .slider .slick-dots .slick-active button {
+    .header .slider .slick-dots .slick-active button {
       background-color: rgba(166, 172, 175, 0.1);
       width: 18px;
       height: 18px;
       border: solid 1px #ffffff; }
-  header .slider .slick-slide {
+  .header .slider .slick-slide {
     outline: none;
     border: none; }
-  header .slider .slick-list {
+  .header .slider .slick-list {
     overflow: hidden; }
-  header .slider .slick-track {
+  .header .slider .slick-track {
     display: flex; }
 
 .about {
@@ -234,14 +239,16 @@ header {
     font-size: 30px;
     line-height: 30px;
     margin-bottom: 30px;
-    color: #555555; }
+    color: #555555;
+    text-align: center; }
   .realization__subtitle {
     font-family: Montserrat;
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 15px;
     color: #8c8c8c;
-    margin-bottom: 35px; }
+    margin-bottom: 35px;
+    text-align: center; }
     .realization__subtitle p {
       width: 700px;
       margin: 0 auto; }
@@ -298,21 +305,59 @@ header {
     font-size: 18px;
     font-family: Montserrat;
     color: #615855; }
-  .by-now .btn-now {
-    align-self: center;
-    text-align: end; }
-    .by-now .btn-now a {
-      font-family: Raleway;
-      color: white;
-      font-weight: 600;
-      text-transform: uppercase;
-      padding: 18px 28px;
+  .by-now .btn-now a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #998675;
+    font-size: 14px;
+    font-family: Raleway;
+    padding: 17px 0;
+    display: block;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: .3s;
+    box-shadow: 0 3px 0 #6b5541;
+    text-align: center;
+    width: 180px; }
+  .by-now .btn-now a:hover {
+    background-color: #998675a4;
+    text-decoration: none; }
+
+.project {
+  padding: 80px 0; }
+  .project__title {
+    font-family: Raleway;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    color: #555555;
+    text-align: center; }
+  .project__subtitle {
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    color: #8c8c8c;
+    margin-bottom: 35px;
+    text-align: center; }
+    .project__subtitle p {
+      width: 700px;
+      margin: 0 auto; }
+  .project .tabs ul {
+    display: flex;
+    justify-content: center; }
+    .project .tabs ul li {
+      padding: 10px 20px;
+      color: #000000;
+      font-family: Montserrat;
+      border: 1px solid #ebebeb;
+      border-radius: 5px;
+      margin-right: 10px; }
+    .project .tabs ul .active {
       background-color: #998675;
-      border-radius: 4px;
-      box-shadow: 0 3px 0 #6b5541;
-      transition: .3s; }
-    .by-now .btn-now a:hover {
-      background-color: #b99174;
-      text-decoration: none; }
+      color: #ffffff; }
+    .project .tabs ul:last-child {
+      margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
