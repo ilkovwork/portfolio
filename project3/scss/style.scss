@@ -525,19 +525,41 @@
                 border: 1px solid #ebebeb;
                 border-radius: 5px;
                 margin-right: 10px;
-                
+                &:last-of-type{
+                    margin: 0;
+                }
             }
             .active{
                 background-color: #998675;
                 color: #ffffff;
             }
-            &:last-child{
-                margin: 0;
-            }
+           
         }
 
         .tab-box{
-            
+            &__image{
+               img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+               }
+            }
+            &__content{
+                padding:30px;
+                background-color: #fbfaf8;
+
+                &-title{
+                    font-family: Raleway;
+                    font-size: 20px;
+                    color: #c7b299;
+                    margin-bottom: 15px;
+                }
+                &-subtitle{
+                    color: #d1d1d1;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                }
+            }
         }
     }
 }
