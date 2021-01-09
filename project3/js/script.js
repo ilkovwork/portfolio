@@ -4,15 +4,17 @@ $('.slider').slick({
   slidesToScroll: 1,
   dots: true,
   focusOnSelect: true,
-  infinite:false
+  infinite:false,
+  initialSlide:1
 });
 
 $('.slider-theme').slick({
   slidesToShow: 3,
   centerMode: true,
-  slidesToScroll: 1,               
+  slidesToScroll: 2,               
   dots: true,
   arrows:false,
   infinite: true, 
-  variableWidth: true,  
+  variableWidth: true,
+  initialSlide:2  
 });
