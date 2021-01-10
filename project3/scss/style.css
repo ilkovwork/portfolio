@@ -184,14 +184,14 @@
   .header .slider .slick-track {
     display: flex; }
 
-.about {
+.info {
   margin: 80px 0; }
-  .about .item {
+  .info .item {
     text-align: center;
     position: relative; }
-    .about .item__image {
+    .info .item__image {
       position: relative; }
-      .about .item__image .before {
+      .info .item__image .before {
         opacity: 0;
         position: absolute;
         top: 0;
@@ -199,33 +199,33 @@
         left: 50%;
         transform: translate(-50%, -50%);
         transition: .3s ease; }
-    .about .item:hover img {
+    .info .item:hover img {
       transition: .4s ease; }
-    .about .item:hover .before {
+    .info .item:hover .before {
       opacity: 1;
       transition: .4s ease; }
-    .about .item:hover .after {
+    .info .item:hover .after {
       opacity: 0; }
-      .about .item:hover .after img {
+      .info .item:hover .after img {
         transition: .4s linear; }
-    .about .item .item__border-bottom {
+    .info .item .item__border-bottom {
       transition: .4s linear; }
-    .about .item:hover .item__border-bottom {
+    .info .item:hover .item__border-bottom {
       background-color: #c7b299;
       transition: .4s linear; }
-    .about .item__title {
+    .info .item__title {
       font-family: Raleway;
       font-size: 22px;
       color: #555555;
       margin-bottom: 25px;
       margin-top: 30px; }
-    .about .item__description {
+    .info .item__description {
       font-family: Montserrat;
       font-size: 14px;
       color: #8c8c8c;
       line-height: 24px;
       margin-bottom: 30px; }
-    .about .item__border-bottom {
+    .info .item__border-bottom {
       width: 50px;
       height: 3px;
       background-color: #f1eee9;
