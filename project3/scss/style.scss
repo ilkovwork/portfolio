@@ -709,3 +709,46 @@
         font-weight:600;
     }
 }
+
+.mob-devices{
+    padding-top: 80px;
+    &__image{
+        text-align: center;
+    }
+    &__content{
+        align-self: center;
+        &-title{
+            @include title;
+        }
+        &-description{
+            font-family: Montserrat;
+            font-size:16px;
+            color: #8c8c8c;
+            line-height: 30px;
+            margin-bottom: 40px;
+        }
+        &-items{
+            ul{
+                li{
+                    font-family: Montserrat;
+                    font-size:16px;
+                    color: #8c8c8c;
+                    line-height: 35px;
+                    display: block; 
+                    position: relative;
+                    padding-left: 25px;
+                    &:before{
+                        content: " ";
+                        position:absolute;
+                        top:6px;
+                        left:0;
+                        background-image: url("../images/item_icon.png");
+                        width: 21px;
+                        height: 21px
+                    }
+                }
+
+            }
+        }
+    }
+}

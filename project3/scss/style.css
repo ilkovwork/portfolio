@@ -495,4 +495,40 @@
       width: 700px;
       margin: 0 auto; }
 
+.mob-devices {
+  padding-top: 80px; }
+  .mob-devices__image {
+    text-align: center; }
+  .mob-devices__content {
+    align-self: center; }
+    .mob-devices__content-title {
+      font-family: Raleway;
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 30px;
+      color: #555555;
+      text-align: center; }
+    .mob-devices__content-description {
+      font-family: Montserrat;
+      font-size: 16px;
+      color: #8c8c8c;
+      line-height: 30px;
+      margin-bottom: 40px; }
+    .mob-devices__content-items ul li {
+      font-family: Montserrat;
+      font-size: 16px;
+      color: #8c8c8c;
+      line-height: 35px;
+      display: block;
+      position: relative;
+      padding-left: 25px; }
+      .mob-devices__content-items ul li:before {
+        content: " ";
+        position: absolute;
+        top: 6px;
+        left: 0;
+        background-image: url("../images/item_icon.png");
+        width: 21px;
+        height: 21px; }
+
 /*# sourceMappingURL=style.css.map */
