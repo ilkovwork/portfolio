@@ -531,4 +531,26 @@
         width: 21px;
         height: 21px; }
 
+.about {
+  text-align: center;
+  padding: 60px 0; }
+  .about__number {
+    font-family: Montserrat;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 48px;
+    padding: 30px 0 15px; }
+  .about__text {
+    font-family: Montserrat;
+    font-size: 16px;
+    color: #c7b299;
+    text-transform: uppercase;
+    padding-bottom: 30px; }
+  .about__border-bottom {
+    width: 50px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 0 auto; }
+
 /*# sourceMappingURL=style.css.map */

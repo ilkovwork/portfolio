@@ -754,5 +754,28 @@
 }
 
 .about{
-    
+    text-align: center;
+    padding: 60px 0;
+    &__image{}
+    &__number{
+        font-family: Montserrat;
+        font-weight: 200;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size:48px;
+        padding: 30px 0 15px;
+    }
+    &__text{
+        font-family: Montserrat;
+        font-size: 16px;
+        color: #c7b299;
+        text-transform: uppercase;
+        padding-bottom:30px;
+    }
+    &__border-bottom{
+        width: 50px;
+        height: 3px;
+        background-color: #ffffff;
+        margin: 0 auto;
+    }
 }
