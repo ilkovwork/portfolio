@@ -18,3 +18,14 @@ $('.slider-theme').slick({
   variableWidth: true,
   initialSlide:2  
 });
+
+
+$('.posts-slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  dots: false,
+  focusOnSelect: true,
+  infinite:false,
+  initialSlide:1,
+  arrows:true,
+});

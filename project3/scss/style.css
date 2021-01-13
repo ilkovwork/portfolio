@@ -553,4 +553,77 @@
     background-color: #ffffff;
     margin: 0 auto; }
 
+.posts {
+  margin: 80px 0 140px; }
+  .posts__title {
+    font-family: Raleway;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    color: #555555;
+    text-align: center;
+    text-align: center; }
+  .posts__subtitle {
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    color: #8c8c8c;
+    margin-bottom: 35px;
+    text-align: center;
+    margin: 0 auto 40px; }
+    .posts__subtitle p {
+      width: 700px;
+      margin: 0 auto; }
+  .posts .posts-slider {
+    position: relative; }
+    .posts .posts-slider button {
+      outline: none;
+      border: none; }
+    .posts .posts-slider .slick-slide {
+      outline: none;
+      border: none; }
+    .posts .posts-slider .slick-list {
+      overflow: hidden; }
+    .posts .posts-slider .slick-track {
+      display: flex; }
+    .posts .posts-slider .slick-arrow {
+      position: absolute;
+      top: 117%;
+      left: calc(50% - 19px);
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      width: 28px;
+      height: 28px;
+      font-size: 0; }
+    .posts .posts-slider .slick-next {
+      margin-left: 35px;
+      background: url(../images/arrow_right_slider_posts.png) 0 0/100% no-repeat; }
+    .posts .posts-slider .slick-prev {
+      background: url(../images/arrow_left_slider_posts.png) 0 0/100% no-repeat; }
+    .posts .posts-slider .slick-disabled {
+      opacity: 0.4; }
+    .posts .posts-slider .item {
+      border: 1px solid #f8f8f8;
+      margin: 0 20px; }
+      .posts .posts-slider .item__image img {
+        width: 100%; }
+      .posts .posts-slider .item__content {
+        padding: 30px 25px; }
+        .posts .posts-slider .item__content-title {
+          font-family: Raleway;
+          font-size: 20px;
+          color: #555555;
+          margin-bottom: 20px; }
+        .posts .posts-slider .item__content-subtitle {
+          font-family: Montserrat;
+          font-size: 14px;
+          color: #8c8c8c;
+          margin-bottom: 30px; }
+        .posts .posts-slider .item__content-read a {
+          font-family: Montserrat;
+          font-size: 14px;
+          color: #c7b299;
+          text-decoration: none; }
+
 /*# sourceMappingURL=style.css.map */
