@@ -26,6 +26,5 @@ $('.posts-slider').slick({
   dots: false,
   focusOnSelect: true,
   infinite:false,
-  initialSlide:1,
   arrows:true,
 });
