@@ -230,7 +230,7 @@
     </div>
   </div>
 
- <!-- section-project -->
+  <!-- section-project -->
   <div class="container-content">
     <div class="wrapper">
       <section class="project">
@@ -243,17 +243,19 @@
               Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
           </div>
           <div class="tabs col-12">
-            <ul>
-              <li><a href="" class="active">All</a></li>
-              <li><a href="">Web Design</a></li>
-              <li><a href="">Mobile App</a></li>
-              <li><a href="">Illustration</a></li>
-              <li><a href="">Photography</a></li>
-            </ul>
+
+            <div class="tabs-triggers">
+              <a href="#all" class="tabs-triggers__item" id='all'>All</a>
+              <a href="#web" class="tabs-triggers__item">Web Design</a>
+              <a href="#mobileapp" class="tabs-triggers__item">Mobile App</a>
+              <a href="#illustration" class="tabs-triggers__item">Illustration</a>
+              <a href="#photography" class="tabs-triggers__item">Photography</a>
+              <a href="#website" class="tabs-triggers__item">Web Site</a>
+              <a href="#3dmodel" class="tabs-triggers__item">3D model</a>
+            </div>
 
             <div class="row">
-
-              <div class="tab-box col-md-4">
+              <div class="tab-box col-md-4" id="web">
                 <div class="tab-box__image">
                   <a href="#"><img src="images/tabs_img_1.jpg" alt="img"><span><i
                         class="fas fa-link fa-2x"></i></span></a>
@@ -264,7 +266,7 @@
                 </div>
               </div>
 
-              <div class="tab-box col-md-4">
+              <div class="tab-box col-md-4" id="mobileapp">
                 <div class="tab-box__image">
                   <a href="#"><img src="images/tabs_img_2.jpg" alt="img"><span><i
                         class="fas fa-link fa-2x"></i></span></a>
@@ -275,7 +277,7 @@
                 </div>
               </div>
 
-              <div class="tab-box col-md-4">
+              <div class="tab-box col-md-4" id="illustration">
                 <div class="tab-box__image">
                   <a href="#"><img src="images/tabs_img_3.jpg" alt="img"><span><i
                         class="fas fa-link fa-2x"></i></span></a>
@@ -286,7 +288,7 @@
                 </div>
               </div>
 
-              <div class="tab-box col-md-4">
+              <div class="tab-box col-md-4" id="photography">
                 <div class="tab-box__image">
                   <a href="#"><img src="images/tabs_img_4.jpg" alt="img"><span><i
                         class="fas fa-link fa-2x"></i></span></a>
@@ -297,7 +299,7 @@
                 </div>
               </div>
 
-              <div class="tab-box col-md-4">
+              <div class="tab-box col-md-4" id="website">
                 <div class="tab-box__image">
                   <a href="#"><img src="images/tabs_img_5.jpg" alt="img"><span><i
                         class="fas fa-link fa-2x"></i></span></a>
@@ -308,7 +310,7 @@
                 </div>
               </div>
 
-              <div class="tab-box col-md-4">
+              <div class="tab-box col-md-4" id="3dmodel">
                 <div class="tab-box__image">
                   <a href="#"><img src="images/tabs_img_6.jpg" alt="img"><span><i
                         class="fas fa-link fa-2x"></i></span></a>
@@ -319,10 +321,14 @@
                 </div>
               </div>
 
+
+              
+
               <div class="btn-realization col-12 d-flex justify-content-center align-items-center"><a href="#">load
                   more</a>
               </div>
             </div>
+
           </div>
         </div>
 
@@ -333,7 +339,7 @@
 
 
 
-<!-- section-video -->
+  <!-- section-video -->
 
   <section class="video">
     <div class="container-content">
@@ -349,14 +355,16 @@
   </section>
 
 
-<!-- section-mob-devices -->
+  <!-- section-mob-devices -->
   <div class="container-content">
     <div class="wrapper">
       <section class="mob-devices">
         <div class="row">
           <div class="mob-devices__image col-md-5"><img src="images/mobile-devices.jpg" alt="img"></div>
           <div class="mob-devices__content col-md-7">
-            <div class="mob-devices__content-title"><h2>Excellent for Mobile Devices.</h2></div>
+            <div class="mob-devices__content-title">
+              <h2>Excellent for Mobile Devices.</h2>
+            </div>
             <div class="mob-devices__content-description">Qisi enim ad minim veniam, quis nostrud exerci tation
               ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt
               lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum
@@ -417,7 +425,7 @@
   </div>
 
 
-<!-- section-posts -->
+  <!-- section-posts -->
   <div class="container-content">
     <div class="wrapper">
       <section class="posts">
@@ -542,7 +550,7 @@
   </div>
 
 
-<!-- section-partners -->
+  <!-- section-partners -->
   <section class="partners">
     <div class="container-content">
       <div class="wrapper">
@@ -557,7 +565,7 @@
   </section>
 
 
-<!-- section-footer -->
+  <!-- section-footer -->
   <footer class="footer">
     <div class="container-content">
       <div class="wrapper">
@@ -677,6 +685,12 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+  <script>
+
+  </script>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -687,7 +701,8 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
   <script src="js/slick.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/sliders.js"></script>
+  <script src="js/tabs.js"></script>
 </body>
 
 </html>

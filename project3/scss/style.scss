@@ -541,18 +541,10 @@
     }
 
     .tabs {
-        ul {
+        &-triggers {
             display: flex;
             justify-content: center;
             margin-bottom: 40px;
-
-            li {
-                margin-right: 10px;
-
-                &:last-of-type {
-                    margin: 0;
-                }
-
 
                 a {
                     padding: 10px 20px;
@@ -563,24 +555,29 @@
                     text-decoration: none;
                     display: block;
                     transition: .3s linear;
-
+                    margin-right: 10px;
+                    &:last-of-type {
+                        margin: 0;
+                    }
                     &:hover {
                         background-color: #998675;
                         color: #ffffff;
                     }
                 }
+                &__item--active{
+                    background-color: #998675;
+                    color: #ffffff;
+                }
             }
-
-            .active {
-                background-color: #998675;
-                color: #ffffff;
-            }
-
+            
         }
+         
+      
 
         .tab-box {
             margin: 0;
             padding: 0 15px;
+            display: none;
 
             &:nth-child(1),
             &:nth-child(2),
@@ -610,7 +607,6 @@
 
 
             }
-
             &__content {
                 padding: 30px;
                 background-color: #fbfaf8;
@@ -679,13 +675,15 @@
             }
 
         }
+        .tab-box--active{
+            display: block;
+        }
 
         .btn-realization {
             margin-top: 40px;
             @include btn;
         }
     }
-}
 
 
 .video {

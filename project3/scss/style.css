@@ -345,41 +345,41 @@
     .project__subtitle p {
       width: 700px;
       margin: 0 auto; }
-  .project .tabs ul {
+  .project .tabs-triggers {
     display: flex;
     justify-content: center;
     margin-bottom: 40px; }
-    .project .tabs ul li {
+    .project .tabs-triggers a {
+      padding: 10px 20px;
+      color: #000000;
+      font-family: Montserrat;
+      border: 1px solid #ebebeb;
+      border-radius: 5px;
+      text-decoration: none;
+      display: block;
+      transition: .3s linear;
       margin-right: 10px; }
-      .project .tabs ul li:last-of-type {
+      .project .tabs-triggers a:last-of-type {
         margin: 0; }
-      .project .tabs ul li a {
-        padding: 10px 20px;
-        color: #000000;
-        font-family: Montserrat;
-        border: 1px solid #ebebeb;
-        border-radius: 5px;
-        text-decoration: none;
-        display: block;
-        transition: .3s linear; }
-        .project .tabs ul li a:hover {
-          background-color: #998675;
-          color: #ffffff; }
-    .project .tabs ul .active {
+      .project .tabs-triggers a:hover {
+        background-color: #998675;
+        color: #ffffff; }
+    .project .tabs-triggers__item--active {
       background-color: #998675;
       color: #ffffff; }
-  .project .tabs .tab-box {
+  .project .tab-box {
     margin: 0;
-    padding: 0 15px; }
-    .project .tabs .tab-box:nth-child(1), .project .tabs .tab-box:nth-child(2), .project .tabs .tab-box:nth-child(3) {
+    padding: 0 15px;
+    display: none; }
+    .project .tab-box:nth-child(1), .project .tab-box:nth-child(2), .project .tab-box:nth-child(3) {
       margin-bottom: 30px; }
-    .project .tabs .tab-box__image {
+    .project .tab-box__image {
       position: relative; }
-      .project .tabs .tab-box__image img {
+      .project .tab-box__image img {
         width: 100%;
         height: 100%;
         object-fit: cover; }
-      .project .tabs .tab-box__image i {
+      .project .tab-box__image i {
         color: #000000;
         position: absolute;
         top: 50%;
@@ -387,11 +387,11 @@
         transform: translate(-50%, -50%);
         opacity: 0;
         transition: .3s ease; }
-    .project .tabs .tab-box__content {
+    .project .tab-box__content {
       padding: 30px;
       background-color: #fbfaf8;
       position: relative; }
-      .project .tabs .tab-box__content:before {
+      .project .tab-box__content:before {
         content: " ";
         position: absolute;
         top: -10px;
@@ -399,19 +399,19 @@
         width: 25px;
         background-color: #fbfaf8;
         transform: rotate(45deg); }
-      .project .tabs .tab-box__content-title {
+      .project .tab-box__content-title {
         margin-bottom: 15px; }
-        .project .tabs .tab-box__content-title a {
+        .project .tab-box__content-title a {
           font-family: Raleway;
           font-size: 20px;
           color: #c7b299;
           text-decoration: none; }
-      .project .tabs .tab-box__content-subtitle a {
+      .project .tab-box__content-subtitle a {
         color: #d1d1d1;
         font-family: Montserrat;
         font-size: 14px;
         text-decoration: none; }
-    .project .tabs .tab-box:hover .tab-box__image a:before {
+    .project .tab-box:hover .tab-box__image a:before {
       content: " ";
       position: absolute;
       top: 0;
@@ -420,16 +420,18 @@
       right: 0;
       background-color: rgba(0, 0, 0, 0.5);
       margin: 0; }
-    .project .tabs .tab-box:hover .tab-box__content {
+    .project .tab-box:hover .tab-box__content {
       background-color: #362f2d; }
-      .project .tabs .tab-box:hover .tab-box__content:before {
+      .project .tab-box:hover .tab-box__content:before {
         content: " ";
         background-color: #362f2d; }
-    .project .tabs .tab-box:hover i {
+    .project .tab-box:hover i {
       opacity: 1; }
-  .project .tabs .btn-realization {
+  .project .tab-box--active {
+    display: block; }
+  .project .btn-realization {
     margin-top: 40px; }
-    .project .tabs .btn-realization a {
+    .project .btn-realization a {
       color: #ffffff;
       text-transform: uppercase;
       font-weight: 600;
@@ -444,7 +446,7 @@
       box-shadow: 0 3px 0 #6b5541;
       text-align: center;
       width: 180px; }
-    .project .tabs .btn-realization a:hover {
+    .project .btn-realization a:hover {
       background-color: #998675a4;
       text-decoration: none; }
 
