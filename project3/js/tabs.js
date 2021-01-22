@@ -31,3 +31,11 @@ $(document).ready(function() {
         $('#3dmodel').addClass('tab-box--active');
       })
     })
+
+
+    $(document).ready(function() {
+      $('.menu-burger').click(function() {
+          $('.menu-burger').toggleClass('open-menu');
+          $('ul').toggleClass('open-menu');
+      });
+  });
