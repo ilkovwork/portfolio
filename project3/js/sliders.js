@@ -4,7 +4,16 @@ $('.slider').slick({
   dots: true,
   focusOnSelect: true,
   infinite:false,
-  initialSlide:1
+  initialSlide:1,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows:false,
+      }
+    }
+
+  ]
 });
 
 $('.slider-theme').slick({
@@ -26,6 +35,21 @@ $('.posts-slider').slick({
   focusOnSelect: true,
   infinite:false,
   arrows:true,
+  responsive: [
+    {
+      breakpoint: 577,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    }
+
+  ]
 });
 
     
