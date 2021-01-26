@@ -1215,13 +1215,16 @@ body {
             }
 
             &__widget {
-                display: flex;
-                flex-wrap: wrap;
-                column-gap: 10px;
-                row-gap: 10px;
-                img{
-                    width: 100%;
-                }
+.row{
+    padding: 0;
+    div{
+        padding:1px;
+        img{
+            width: 100%;
+        }
+    } 
+    
+}
 
             }
         }

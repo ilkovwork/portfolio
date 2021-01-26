@@ -827,13 +827,12 @@ body {
       .footer .row .item__post:hover .item__post-description a {
         color: #c7b299;
         transition: .2s linear; }
-    .footer .row .item__widget {
-      display: flex;
-      flex-wrap: wrap;
-      column-gap: 10px;
-      row-gap: 10px; }
-      .footer .row .item__widget img {
-        width: 100%; }
+    .footer .row .item__widget .row {
+      padding: 0; }
+      .footer .row .item__widget .row div {
+        padding: 1px; }
+        .footer .row .item__widget .row div img {
+          width: 100%; }
   .footer .copyright {
     background-color: black;
     font-family: Montserrat;
