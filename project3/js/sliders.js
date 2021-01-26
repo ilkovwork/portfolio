@@ -17,14 +17,30 @@ $('.slider').slick({
 });
 
 $('.slider-theme').slick({
-  slidesToShow: 3,
-  centerMode: true,
-  slidesToScroll: 2,               
+  slidesToShow: 1,
+  slidesToScroll: 1, 
+  centerMode: true,     
   dots: true,
   arrows:false,
   infinite: true, 
-  variableWidth: true,
-  initialSlide:2  
+  // variableWidth: true,
+  initialSlide:2,
+  responsive: [
+    {
+      breakpoint: 577,
+      settings: {
+        centerMode: false, 
+        variableWidth: false,
+      }
+    },
+      {
+        breakpoint: 768,
+        settings: {
+          centerMode: false, 
+          variableWidth: false,
+        }
+      }
+  ] 
 });
 
 
@@ -37,18 +53,22 @@ $('.posts-slider').slick({
   arrows:true,
   responsive: [
     {
-      breakpoint: 577,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
       }
+    },
+    {
+      breakpoint: 577,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
     }
-
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
   ]
 });
 

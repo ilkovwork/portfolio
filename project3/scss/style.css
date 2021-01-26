@@ -12,7 +12,7 @@ body {
   padding: 0; }
 
 .wrapper {
-  padding: 0 50px;
+  padding: 0 40px;
   margin: 0px; }
 
 .bg-color {
@@ -42,13 +42,15 @@ body {
       color: #ffffff;
       font-family: Raleway;
       font-weight: 400;
-      text-decoration: none; }
+      text-decoration: none;
+      padding-top: 4px; }
       .header .navbar__logo a {
-        font-size: 34px;
+        font-size: 28px;
         color: #ffffff;
         text-decoration: none; }
       .header .navbar__logo img {
-        margin-right: 10px; }
+        margin-right: 10px;
+        width: 40px; }
     .header .navbar__nav {
       align-self: center; }
       .header .navbar__nav ul {
@@ -751,13 +753,15 @@ body {
       color: #ffffff;
       font-family: Raleway;
       font-weight: 400;
-      text-decoration: none; }
+      text-decoration: none;
+      padding-top: 4px; }
       .footer .row .item__logo a {
-        font-size: 34px;
+        font-size: 28px;
         color: #ffffff;
         text-decoration: none; }
       .footer .row .item__logo img {
-        margin-right: 10px; }
+        margin-right: 10px;
+        width: 40px; }
     .footer .row .item__description {
       margin: 35px 0;
       color: #555555;
@@ -828,6 +832,8 @@ body {
       flex-wrap: wrap;
       column-gap: 10px;
       row-gap: 10px; }
+      .footer .row .item__widget img {
+        width: 100%; }
   .footer .copyright {
     background-color: black;
     font-family: Montserrat;
@@ -835,11 +841,12 @@ body {
     .footer .copyright .row {
       padding: 45px 0; }
     .footer .copyright ul {
-      display: flex; }
+      display: flex;
+      color: #555555; }
       .footer .copyright ul li a {
         transition: .2s linear;
-        color: #555555;
-        text-decoration: none; }
+        color: #959595;
+        text-decoration: dotted; }
         .footer .copyright ul li a:hover {
           color: #c7b299; }
       .footer .copyright ul li:after {
@@ -915,13 +922,11 @@ body {
     .realization__subtitle p {
       width: 100%; }
     .realization .slider-theme .slick-slide {
-      padding-top: 20px; }
+      padding-top: 0px; }
     .realization .slider-theme .slick-center {
       padding-top: 0; }
     .realization .slider-theme .slick-dots {
       bottom: 15px; }
-    .realization .slider-theme img {
-      height: 200px; }
 
   .by-now {
     padding: 25px 0; }
@@ -1075,8 +1080,6 @@ body {
       padding-top: 0; }
     .realization .slider-theme .slick-dots {
       bottom: 15px; }
-    .realization .slider-theme img {
-      height: 230px; }
 
   .by-now {
     padding: 25px 0; }
@@ -1154,8 +1157,10 @@ body {
 
   .partners {
     padding: 50px 0; }
-    .partners__image img {
-      width: 80%; }
+    .partners__image {
+      text-align: center; }
+      .partners__image img {
+        width: 60%; }
 
   .footer .row {
     padding: 40px 0; }
@@ -1180,7 +1185,7 @@ body {
         font-size: 12px; }
       .footer .copyright ul li:after {
         padding: 7px; } }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .header .navbar__logo {
     text-align: center;
     margin-bottom: 10px; }
@@ -1192,8 +1197,6 @@ body {
     padding-top: 45px; }
     .realization__subtitle p {
       width: 100%; }
-    .realization .slider-theme img {
-      height: 300px; }
 
   .by-now .btn-now {
     margin-top: 0;
@@ -1210,6 +1213,38 @@ body {
         padding: 8px 10px;
         margin-right: 6px; }
     .project .tabs .tab-box__content {
-      padding: 20px; } }
+      padding: 20px; }
+
+  .partners {
+    padding: 50px 0; }
+    .partners__image img {
+      width: 80%; }
+
+  .mob-devices {
+    padding-top: 80px; }
+    .mob-devices__image {
+      text-align: center;
+      display: none; }
+    .mob-devices__content {
+      align-self: center; }
+      .mob-devices__content-description {
+        text-align: justify; }
+      .mob-devices__content-img-mob {
+        display: block;
+        text-align: center; }
+        .mob-devices__content-img-mob img {
+          width: 50%; }
+      .mob-devices__content-items {
+        margin-bottom: 30px; }
+
+  .footer .row .item__widget {
+    width: 300px;
+    margin: 0 auto; }
+  .footer .copyright .row {
+    padding: 45px 0; }
+    .footer .copyright .row div:first-of-type {
+      margin-bottom: 15px; }
+  .footer .copyright ul {
+    justify-content: center; } }
 
 /*# sourceMappingURL=style.css.map */
