@@ -1097,7 +1097,7 @@ body {
     .project .tabs-triggers {
       justify-content: space-between; }
       .project .tabs-triggers a {
-        font-size: 12px;
+        font-size: 1.7vw;
         padding: 8px 5px; }
     .project .tabs .tab-box__content {
       padding: 15px; }
@@ -1208,7 +1208,7 @@ body {
     .project .tabs-triggers {
       justify-content: space-between; }
       .project .tabs-triggers a {
-        font-size: 13px;
+        font-size: 1.8vw;
         padding: 8px 10px;
         margin-right: 6px; }
     .project .tabs .tab-box__content {
